@@ -1,0 +1,76 @@
+<!--Name: Deshaun Jordan
+Student Id: 300921366
+Course: COMP_229 web dev sec 401
+Instructor: Thiago Castilho 
+Assignment: A2
+--> 
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <img src="/images/djj.jpg" width="75px" height=55px style="padding-right:10px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ">
+
+      <% if (title == "Home") { %>
+      <li class = "nav-item active">
+      <% } else { %>
+      <li class = "nav-item">
+      <% } %>      
+        
+          <a class="nav-link" href="/home"><i class="fa-solid fa-house-user"></i> Home</a>
+        </li>
+        
+        <% if (title == "About") { %>
+      <li class = "nav-item active">
+      <% } else { %>
+      <li class = "nav-item">
+      <% } %>    
+          <a class="nav-link" href="/about"><i class="fa-solid fa-circle-info"></i> About</a>
+        </li>
+
+        <% if (title == "Projects") { %>
+      <li class = "nav-item active">
+      <% } else { %>
+      <li class = "nav-item">
+      <% } %>    
+          <a class="nav-link" href="/projects"><i class="fa-solid fa-bars"></i> Projects</a>
+        </li>
+
+        <% if (title == "Services") { %>
+      <li class = "nav-item active">
+      <% } else { %>
+      <li class = "nav-item">
+      <% } %>    
+          <a class="nav-link" href="/services"><i class="fa-solid fa-database"></i> Services</a>
+        </li>
+
+        <% if (title == "Business tournaments") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/tournament-list"><i class="fas fa-book"></i> Business tournaments List</a>
+        </li>
+
+        <% if (title == "tournament") { %>
+      <li class = "nav-item active">
+      <% } else { %>
+      <li class = "nav-item">
+      <% } %>    
+          <a class="nav-link" href="/tournament"><i class="fa-solid fa-mobile-screen-button"></i> Tournament</a>
+        </li>
+        <% if(typeof displayName == 'string' && displayName) { %>
+          <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %></li>
+          <li class="nav-item"><a href="/logout" class="nav-link">
+            <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+        <% } else { %>
+          <li class="nav-item"><a href="/login" class="nav-link">
+            <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+        <% } %>
+      
+    </div>
+  </div>
+</nav>

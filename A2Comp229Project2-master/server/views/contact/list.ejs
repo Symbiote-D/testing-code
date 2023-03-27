@@ -1,0 +1,75 @@
+<!--Name: Deshaun Jordan
+Student Id: 300921366
+Course: COMP_229 web dev sec 401
+Instructor: Thiago Castilho 
+Assignment: A2
+--> 
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+        <div class="offset-md col-md-13"><br>
+            <h1 class="text-center"><%= title %></h1><hr>
+
+            <% if(typeof displayName == 'string' && displayName) { %>
+                <a href="/tournament-list/add" class="btn btn-primary" role="button">
+                <i class="fas fa-plus-circle"></i> Add a tournament</a>
+            <% } %><br>
+            <br>
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr>
+                    <% if(typeof displayName == 'string' && displayName) { %>
+                        <th class="text-center">Name</th>
+                        <th class="text-center">Phone number</th>
+                        <th class="text-center">Email address</th>
+                        <th></th>
+                        <th></th>
+                    <% } else { %>
+                        <th class="text-center">Name</th>
+                        <th class="text-center">Phone number</th>
+                        <th class="text-center">Email address</th>
+                        <th></th>
+                        <th></th>
+                    <% } %>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let count = 0; count < TournamentList.length; count++) { %>
+                    <tr>
+                        <% if(typeof displayName == "string" && displayName) { %>
+                           <td class="text-center"><%= TournamentList[count].name %></td>
+                           <td class="text-center"><%= TournamentList[count].number %></td>
+                           <td class="text-center"><%= TournamentList[count].emailaddress %></td>
+                           <td class="text-center">
+                            <a href="/tournament-list/edit/<%= TournamentList[count]._id %>" class="btn btn-primary"> <i class="fa"></i>Update</a>
+                          </td>
+                          <td class="text-center">
+                            <a href="/tournament-list/delete/<%= TournamentList[count]._id %>" class="btn btn-warning btn-sm"> <i class="fa"></i>Delete</a>
+                          </td>
+                         <% } else { %>
+                           <td class="text-center"><%= TournamentList[count].name %></td>
+                           <td class="text-center"><%= TournamentList[count].number %></td>
+                           <td class="text-center"><%= TournamentList[count].emailaddress %></td>
+                         <% } %>
+                       </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+  </main>
+ 
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
+  
+
+
+
+
+

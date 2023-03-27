@@ -1,0 +1,71 @@
+<!--Name: Deshaun Jordan
+Student Id: 300921366
+Course: COMP_229 web dev sec 401
+Instructor: Thiago Castilho 
+Assignment: A2
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/header.ejs %>
+</head>
+<body>
+    <header>
+        <% include partials/main_nav.ejs %>
+    </header>
+
+<!--Main content-->
+<main class="container">
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the <%= title%>!</h1>
+  
+</div>
+</main>
+<br>
+
+<fieldset class="fieldset">
+
+  <form>
+    <label for="fname">First Name:</label>
+    <input type="text"  id="fname" name="firstname" placeholder="Enter your first name...">
+    <br><br>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your last name...">
+    <br><br>
+    <label for="email">Email ID:</label>
+    <input type="text" id="email" name="Email" placeholder="abcd@gmail.com">
+    <br><br>
+    <label for="number">Phone Number: </label>
+    <input type="text" id="number" name="phone number" placeholder="+1 (000) 123-456" maxlength="16">
+    <br><br>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="saudi arabia">Saudi Arabia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="australia">Australia</option>
+      <option value="england">England</option>
+      <option value="india">India</option>
+    </select><br><br>
+
+    <label for="contact">Contact Us:</label><br>
+    <textarea id="contact" name="contactinfo" placeholder="Questions or Comments" ></textarea>
+<br>
+
+    <span class= "homeCon"><a href="/home">Submit</a></span>
+    <input type="reset" value="Clear form">
+  </form>
+</fieldset>
+
+
+<footer>
+    <% include partials/bottom_nav.ejs %>
+</footer>
+
+<script src = "/jquery/dist/jquery.min.js"></script>
+    <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src = "/Script/app.js"></script> 
+
+</body>
+</html>

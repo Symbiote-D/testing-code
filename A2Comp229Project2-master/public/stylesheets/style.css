@@ -1,0 +1,140 @@
+.nav-link{
+  font-size: 20pt;
+}
+body {  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  background-color: azure;
+  background-image: radial-gradient( circle closest-side,white,azure);
+  padding-bottom: 50px;
+
+}
+#b1Home{
+  padding:8px 24px;
+  font-size: 18px;
+  font-weight: 100;
+  margin:16px 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #333;
+  color:#fff;
+  cursor:pointer;
+}
+
+.container{
+  background-color: antiquewhite;
+  padding:30px;  
+}
+
+.edit{
+  margin-left: 20px;
+}
+
+#homeContent{
+  text-align: center;
+  padding-left:100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+
+a{
+  font-size: large;
+ color:black; 
+
+ text-decoration: none; 
+}
+
+.profile{
+  float: right;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+#aboutPara{
+  padding-left: 20px;
+  padding-right:50px;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover{ color:gray; text-decoration: underline;}
+a:visited{color:lightblue;}
+
+
+.parPro{
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: right;
+}
+
+#projectPara{
+   width: 80%; margin:0 auto;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16pt;
+}
+
+.homeCon{
+  margin-top: 10px; 
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:20px;
+  padding-left:20px;
+  color:black;
+} 
+
+.nav-link{
+  margin-right: 10px;
+}
+
+
+  .homeCon:hover{background-color: black;
+  color:white;
+text-decoration: none;}
+
+input[type=reset]{
+  background-color: lightblue;   
+  margin-top: 10px; 
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:20px;
+  padding-left:20px;
+  box-shadow: 10px white;
+}
+input[type=reset]:hover{
+  background-color: black;
+  color:white;
+}
+
+#country{
+  margin-top:6px;
+  margin-bottom:16px;
+}
+textarea{
+  margin-top:6px;
+  margin-bottom: 16px;   
+  padding:5px; 
+}
+.fieldset{
+  background-color: grey;
+  box-shadow: 5px 10px 18px black;
+  width: 70%;
+  margin-left:100px; 
+  margin-bottom: 40px;
+ 
+}
+
+form{
+  padding:30px;
+  padding-right: 50px;
+  
+}
+
+#service{
+  
+  padding-left: 40px;
+}
+
+

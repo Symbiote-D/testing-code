@@ -1,0 +1,63 @@
+<!--Name: Deshaun Jordan
+Student Id: 300921366
+Course: COMP_229 web dev sec 401
+Instructor: Thiago Castilho 
+Assignment: A2
+--> 
+
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Main Content -->
+  <div class="container">
+    <div class="row">
+        <div class="offset-md-2 col-md-5"><br><br>
+            <h1><%= title %></h1><br>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="nameTextField">Name </label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter the tournament name!"
+                    name="name" 
+                    value="<%= TournamentList.name %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="numberTextField">Phone number </label>
+                    <input type="text" class="form-control"
+                    id="numberTextField"
+                    placeholder="Enter the phone number!"
+                    name="number"
+                    value="<%= TournamentList.number %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailTextField">Email address </label>
+                    <input type="email" class="form-control"
+                    id="emailTextField"
+                    placeholder="Enter the email address!"
+                    name="emailaddress" 
+                    value="<%= TournamentList.emailaddress %>"
+                    required>
+                </div><br>
+
+                <button class="btn btn-primary" type="submit">
+                <i class="fas fa-edit"></i> Submit</button>
+                
+                <a href="/tournament-list" class="btn btn-warning">
+                <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+    <%- include ../partials/bottom_nav.ejs %>
+
+

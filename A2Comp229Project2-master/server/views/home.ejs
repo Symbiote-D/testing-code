@@ -1,0 +1,49 @@
+<!--Name: Deshaun Jordan
+Student Id: 300921366
+Course: COMP_229 web dev sec 401
+Instructor: Thiago Castilho 
+Assignment: A2
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/header.ejs %>
+</head>
+<body>
+    <header>
+        <% include partials/main_nav.ejs %>
+    </header>
+
+<!--Main content-->
+<main class="container">
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the <%= title%>!</h1>
+  
+</div>
+</main>
+ 
+    <center><button id = "b1Home" type="button"> About Me </button></center>
+    <script type = "text/javascript">
+        document.getElementById("b1Home").onclick= function(){
+            location.href = "http://localhost:3000/about";
+        };
+        </script>
+        <div id = "homeContent">
+            <p> Welcome to  My Project 2 Assignment Written and Created by Deshaun Jordan #300921366
+                With the help of Professor Thiago of Comp229 W2023
+                
+                            Click the About me Button to get Started
+            </p>
+        </div>
+
+<footer>
+    <% include partials/bottom_nav.ejs %>
+</footer>
+
+<script src = "/jquery/dist/jquery.min.js"></script>
+    <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src = "/Script/app.js"></script> 
+
+</body>
+</html>

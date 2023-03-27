@@ -1,0 +1,51 @@
+<!--Name: Deshaun Jordan
+Student Id: 300921366
+Course: COMP_229 web dev sec 401
+Instructor: Thiago Castilho 
+Assignment: A2
+--> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/header.ejs %>
+</head>
+<body>
+    <header>
+        <% include partials/main_nav.ejs %>
+    </header>
+
+<!--Main content-->
+<main class="container">
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to my <%= title%> </h1>
+  
+</div>
+</main>
+<br>
+<center><h2>Introduction</h2></center>
+<img src="/images/Mj.jpg" class="profile" alt="picture" width="40%" height="50%"><br><br>
+
+<div id="aboutPara">
+<p>           An  a enthusiastic, skilled, articulate and reliable College student looking for a software engineering 
+    internship where I can apply my sound programming and design skills. Eager to apply my strong 
+    attention to detail, teamworking, collaboration skills and willingness to learn to an organization. <br>
+
+      I am really happy to know that you dropped by my webpage to know more about me.
+      You can check out my  Resume by clicking on link below
+</p>
+    <br>
+    <span class="resumeLink"><a href="/Assets/ExampleR.pdf"><i class="fa-solid fa-download"></i>  Resume</a></span>
+</div><br>
+
+<footer>
+    <% include partials/bottom_nav.ejs %>
+</footer>
+
+<script src = "/jquery/dist/jquery.min.js"></script>
+    <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src = "/Script/app.js"></script> 
+
+</body>
+</html>
